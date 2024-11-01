@@ -5,6 +5,7 @@ import compression from "compression";
 import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import morgan from "morgan";
+import { errorHandler } from "@core/middlewares/errorHandler";
 
 // instance express application and port variables .
 export const app = express();
@@ -17,3 +18,5 @@ app.use(cookieParser());
 app.use(compression());
 app.use(helmet());
 app.use(morgan("dev"));
+
+app.use(errorHandler);

@@ -19,4 +19,5 @@ app.use(compression());
 app.use(helmet());
 app.use(morgan("dev"));
 
+// initialize errorHanfdler middleware
 app.use(errorHandler);

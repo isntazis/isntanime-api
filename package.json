@@ -1,0 +1,28 @@
+{
+  "name": "isntanime-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Restful API built in for general purposes challenge to myself.",
+  "scripts": {
+    "start": "pnpm --filter app start",
+    "dev": "pnpm --filter app dev",
+    "build:app": "pnpm --filter app build",
+    "build:dtos": "pnpm --filter dtos build",
+    "test:app": "pnpm --filter app test",
+    "test:dtos": "pnpm --filter dtos test",
+    "format": "prettier . --format"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isntazis/isntanime-api.git"
+  },
+  "author": "isntazis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isntazis/isntanime-api/issues"
+  },
+  "homepage": "https://github.com/isntazis/isntanime-api#readme",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "target": "ES2020",
+    "module": "NodeNext",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "outDir": "./dist"
+  },
+}

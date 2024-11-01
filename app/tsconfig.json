@@ -1,0 +1,27 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@core/*": [
+        "src/core/*"
+      ],
+      "@drizzle/*": [
+        "src/drizzle/*"
+      ],
+      "@http/*": [
+        "src/http/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    },
+  }
+}

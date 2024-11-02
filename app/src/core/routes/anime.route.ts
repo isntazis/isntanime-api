@@ -1,9 +1,10 @@
 import { Router } from "express";
-import { getAnimes, getAnimeById } from "@core/controllers/anime.controller";
+import { getAnimes, getAnimeById, createAnime } from "@core/controllers/anime.controller";
 
 const router = Router();
 
 router.get('/anime', getAnimes);
 router.get('/anime/:id', getAnimeById);
+router.post('/anime', createAnime);
 
 export default router;

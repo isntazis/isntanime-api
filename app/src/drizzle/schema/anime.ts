@@ -11,7 +11,7 @@ interface Studio {
 }
 
 interface Genre {
-  [key: string]: string;
+  name: string[];
 }
 
 // initialize table model

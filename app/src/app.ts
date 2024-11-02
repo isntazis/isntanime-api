@@ -6,6 +6,7 @@ import cookieParser from "cookie-parser";
 import helmet from "helmet";
 import morgan from "morgan";
 import { errorHandler } from "@core/middlewares/errorHandler";
+import animeRoute from "@core/routes/anime.route";
 
 // instance express application and port variables .
 export const app = express();
@@ -19,5 +20,8 @@ app.use(compression());
 app.use(helmet());
 app.use(morgan("dev"));
 
-// initialize errorHanfdler middleware
+// initialize anime route
+app.use('/api', animeRoute);
+
+// initialize errorHandler middleware
 app.use(errorHandler);

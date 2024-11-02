@@ -11,15 +11,15 @@ interface Studio {
 }
 
 interface Genre {
-  [key: string]: string;
+  name: string[];
 }
 
 // initialize table model
 export const anime = pg.pgTable("anime", {
-  id: pg.serial().primaryKey(),
+  id: pg.integer().primaryKey().generatedAlwaysAsIdentity().notNull(),
   title: pg.varchar().notNull(),
   description: pg.varchar().notNull(),
-  image: pg.varchar().notNull().unique(),
+  image: pg.varchar().unique().notNull(),
   author: pg.json().$type<Author>().notNull(),
   studio: pg.json().$type<Studio>().notNull(),
   genre: pg.json().$type<Genre>().notNull(),

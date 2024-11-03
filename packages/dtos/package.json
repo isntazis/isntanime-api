@@ -6,6 +6,7 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {

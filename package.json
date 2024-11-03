@@ -9,6 +9,7 @@
     "build:app": "pnpm --filter app build",
     "build:dtos": "pnpm --filter dtos build",
     "test:app": "pnpm --filter app test",
+    "test:coverage": "pnpm --filter app test:coverage && pnpm --filter dtos test:coverage",
     "test:dtos": "pnpm --filter dtos test",
     "format": "prettier . --format"
   },

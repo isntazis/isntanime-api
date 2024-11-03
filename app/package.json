@@ -9,6 +9,7 @@
     "dev": "nodemon",
     "build": "tsc -p tsconfig.build.json && tsc-alias",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint . --fix",
     "db:push": "drizzle-kit push",
     "db:generate": "drizzle-kit generate",

@@ -4,7 +4,7 @@ A RESTFUL API application built and developed with the aim of personal learning.
 ## Get Started
 Some ways to develop this project on your own device
 
-> 1. Git Clone
+### Git Clone
 
 First and foremost you have to clone this repo by running the following command:
 
@@ -20,7 +20,7 @@ pnpm install
 ```
 </br>
 
-> 2. Starting developmont mode  
+### Starting developmont mode  
 
 If you have finished cloning this repo, the next step is the installation process for dependencies.
 
@@ -42,7 +42,7 @@ Then you open your own browser by typing:
 </pre>
 </br>
 
-> 3. Starting unit testing  
+### Starting unit testing  
 
 The next step After development mode is testing mode, which aims to analyze and check the errors of code.  
 
@@ -57,7 +57,7 @@ pnpm run test:e2e
 ```
 </br>
 
-> 4. Starting production mode  
+### Starting production mode  
 
 After completing development and testing mode, the next process is production mode.  
 
@@ -75,7 +75,7 @@ pnpm run build
 ```
 </br>
 
-### Technologies
+## Technologies
 These are some of the technologies which i used to build this project.
 
 - PNPM  
